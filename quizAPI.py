@@ -8,9 +8,9 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from ttkbootstrap import Style
 
-API_URL = "https://opentdb.com/api.php?amount=25"
+API_URLCall = "https://opentdb.com/api.php?amount=25"
 
-response = requests.get(API_URL)
+response = requests.get(API_URLCall)
 data = json.loads(response.text)
 
 questions = data['results']
